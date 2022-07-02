@@ -19,8 +19,11 @@
     <Filter Include="Weapons">
       <UniqueIdentifier>{e6eee92f-931a-40d6-ad97-4c91c9f00ab0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ModificationWeapon">
+    <Filter Include="ModificationWeaponType">
       <UniqueIdentifier>{ede87aa1-e2e5-44e3-a9e3-7054a9410c12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ModificationWeapon">
+      <UniqueIdentifier>{36dd443c-4e15-4f69-85c5-71449339d947}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -33,11 +36,20 @@
     <ClCompile Include="Weapon.cpp">
       <Filter>Weapons</Filter>
     </ClCompile>
-    <ClCompile Include="Weapon_M4A1.cpp">
-      <Filter>Исходные файлы</Filter>
+    <ClCompile Include="WeaponClip.cpp">
+      <Filter>ModificationWeaponType</Filter>
+    </ClCompile>
+    <ClCompile Include="CartridgeType.cpp">
+      <Filter>ModificationWeaponType</Filter>
+    </ClCompile>
+    <ClCompile Include="ShutterType.cpp">
+      <Filter>ModificationWeaponType</Filter>
     </ClCompile>
     <ClCompile Include="WeaponClipFor35.cpp">
       <Filter>ModificationWeapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon_M4A1.cpp">
+      <Filter>Weapons</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -49,6 +61,15 @@
     </ClInclude>
     <ClInclude Include="Weapon_M4A1.h">
       <Filter>Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="WeaponClip.h">
+      <Filter>ModificationWeaponType</Filter>
+    </ClInclude>
+    <ClInclude Include="CartridgeType.h">
+      <Filter>ModificationWeaponType</Filter>
+    </ClInclude>
+    <ClInclude Include="ShutterType.h">
+      <Filter>ModificationWeaponType</Filter>
     </ClInclude>
     <ClInclude Include="WeaponClipFor35.h">
       <Filter>ModificationWeapon</Filter>

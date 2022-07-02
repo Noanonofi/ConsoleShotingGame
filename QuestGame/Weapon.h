@@ -1,24 +1,29 @@
 #ifndef _WEAPON_H
 #define _WEAPON_H
-#pragma once
-#include <chrono>
-#include <iostream>
-#include "WeaponClipFor35.h"
+#include "WeaponClip.h"
+#include "CartridgeType.h"
+#include "ShutterType.h"
 
-class Weapon
-{
+class Weapon {
 public:
-	virtual void setDamageWeapon(const unsigned int& value) = 0;
-	virtual void setShotDelay(const double& value) = 0;
-	virtual void setnumberRoundsInClip(const WeaponClipFor35* weaponClipFor35 = nullptr) = 0;
-	virtual void setWeaponReloadingSpeed(const WeaponClipFor35* weaponClipFor35) = 0;
+	/*
+		* InstallNewTypeCartridges - установка нового типа патронов, влияющая на урон от выстрела
+		* changeShotDelay - установка нового затвора,  влияющая на скорострельность aka задержка между выстрелами
+		* InstallNewWeaponClip - установка нового магазина для оружия, влияющая на количество патронов в и скорость перезарядки оружия
+	*/
+	virtual void InstallNewTypeCartridges(const CartridgeType& cartridgeType) = 0;
+	virtual void changeShotDelay(const ShutterType& shutterTypes) = 0;
+	virtual void InstallNewWeaponClip(const WeaponClip& weaponCLip) = 0;
 
-	~Weapon() {}
 protected:
 	unsigned int DamageShot;
 	double ShotDelay;
 	unsigned int NumberRoundsInClip;
 	double weaponReloadingSpeed;
+	CartridgeType& cartridgeType;
+	ShutterType& shutterType;
+	WeaponClip& weaponClip;
 };
-#endif 
+
+#endif
 

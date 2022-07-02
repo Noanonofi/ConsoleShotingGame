@@ -128,14 +128,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Actor.cpp" />
+    <ClCompile Include="CartridgeType.cpp" />
     <ClCompile Include="QuestGame.cpp" />
+    <ClCompile Include="ShutterType.cpp" />
     <ClCompile Include="Weapon.cpp" />
+    <ClCompile Include="WeaponClip.cpp" />
     <ClCompile Include="WeaponClipFor35.cpp" />
     <ClCompile Include="Weapon_M4A1.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Actor.h" />
+    <ClInclude Include="CartridgeType.h" />
+    <ClInclude Include="ShutterType.h" />
     <ClInclude Include="Weapon.h" />
+    <ClInclude Include="WeaponClip.h" />
     <ClInclude Include="WeaponClipFor35.h" />
     <ClInclude Include="Weapon_M4A1.h" />
   </ItemGroup>
