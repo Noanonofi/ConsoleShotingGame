@@ -4,8 +4,8 @@
 class ShutterType
 {
 public:
-	ShutterType();
-	virtual const  double getRateofFire() const = 0;
+	virtual void setShotDelay(const unsigned int& value) = 0;
+	virtual double getRateofFire() const = 0;
 	~ShutterType();
 protected:
 	double ShotDelay;

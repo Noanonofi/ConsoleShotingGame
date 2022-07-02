@@ -11,18 +11,19 @@ public:
 		* changeShotDelay - установка нового затвора,  влияющая на скорострельность aka задержка между выстрелами
 		* InstallNewWeaponClip - установка нового магазина для оружия, влияющая на количество патронов в и скорость перезарядки оружия
 	*/
-	virtual void InstallNewTypeCartridges(const CartridgeType& cartridgeType) = 0;
-	virtual void changeShotDelay(const ShutterType& shutterTypes) = 0;
-	virtual void InstallNewWeaponClip(const WeaponClip& weaponCLip) = 0;
+	virtual void InstallNewTypeCartridges(const CartridgeType* cartridgeType) = 0;
+	virtual void changeShotDelay(const ShutterType* shutterTypes) = 0;
+	virtual void InstallNewWeaponClip(const WeaponClip* weaponCLip) = 0;
+	~Weapon() {}
 
 protected:
 	unsigned int DamageShot;
 	double ShotDelay;
 	unsigned int NumberRoundsInClip;
 	double weaponReloadingSpeed;
-	CartridgeType& cartridgeType;
-	ShutterType& shutterType;
-	WeaponClip& weaponClip;
+	CartridgeType* cartridgeType;
+	ShutterType* shutterType;
+	WeaponClip* weaponClip;
 };
 
 #endif

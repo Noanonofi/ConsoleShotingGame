@@ -4,8 +4,10 @@
 class CartridgeType
 {
 public:
-	CartridgeType();
-	const virtual double getBulletDamage() const = 0;
+	virtual void setDamageShot(const unsigned int& value) = 0;
+
+	virtual double getBulletDamage() const = 0;
+
 	~CartridgeType();
 protected:
 	double DamageShot;
