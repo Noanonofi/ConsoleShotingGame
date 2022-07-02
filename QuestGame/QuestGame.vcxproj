@@ -130,11 +130,13 @@
     <ClCompile Include="Actor.cpp" />
     <ClCompile Include="QuestGame.cpp" />
     <ClCompile Include="Weapon.cpp" />
+    <ClCompile Include="WeaponClipFor35.cpp" />
     <ClCompile Include="Weapon_M4A1.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Actor.h" />
     <ClInclude Include="Weapon.h" />
+    <ClInclude Include="WeaponClipFor35.h" />
     <ClInclude Include="Weapon_M4A1.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
