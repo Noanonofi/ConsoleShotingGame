@@ -16,5 +16,7 @@ protected:
 	double WeaponReloadingSpeed;
 };
 
+//Rewrite weapon modifications from classes to enum
+
 #endif
 

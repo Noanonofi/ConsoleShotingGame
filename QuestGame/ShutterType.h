@@ -11,5 +11,7 @@ protected:
 	double ShotDelay;
 };
 
+//Rewrite weapon modifications from classes to enum
+
 #endif
 

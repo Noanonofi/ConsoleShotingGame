@@ -13,6 +13,6 @@ protected:
 	double DamageShot;
 };
 
-
+//Rewrite weapon modifications from classes to enum
 
 #endif
